@@ -1,9 +1,38 @@
 # mw2-p2w
-Quick paste for MW2 - needs work atm
+***POC For Modern WarfareII / Warzone 2***
 
+All offsets and code here have been updated for latest game patch. It just needs to be compiled. Im leaving this up to you I have left the project files and .sln files so you can import and edit the project yourself. Below is a list of features for what is included, I am not responsible for what you do with this :)
 
-Quick explanation of what needs to be and what has been done.
+*Aimbot:*
 
-This was an old MW1 cheat from a few years ago, all I have done is paste new offsets and code to work with MW2 / Warzone 2. It needs work and to be compiled correctly. Im still getting a few errors (i've been working on it in Visual Studio 2022) and as of now im unsure of how to solve them. If you are able to fix them or have any suggestions please let me know. Contact me on github or my discord below.
+• Weapon Selection
 
-Vtolz#4624
+• Memory Aim
+
+• On Key (On/Off)
+
+• Aim Bones (Head) (Neck) (Body) (Closest)
+
+• Visibles Check
+
+• Smooth (1-10)
+
+• FOV (1-100)
+
+*Visuals:*
+
+• On Key (On/Off)
+
+• Player Names
+
+• Player Distance
+
+• Health Bar (Constant) (Normal)
+
+• Health Text
+
+• Bounding Box (3D) (2D)
+
+• Outlines (Above) (Below) (Crosshair)
+
+• Color Picker
