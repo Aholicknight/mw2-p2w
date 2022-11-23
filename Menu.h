@@ -2,6 +2,7 @@
 
 namespace Menu
 {
+	
 	extern bool bIsOpen;
 	void DrawMenu();
 	void MenuInit();
