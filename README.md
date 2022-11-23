@@ -3,38 +3,55 @@
 
 **All offsets and code here have been updated for latest game patch. It just needs to be compiled. Im leaving this up to you I have left the project files and .sln files so you can import and edit the project yourself. Below is a list of features for what is included, I am not responsible for what you do with this :)**
 
-*Aimbot:*
+# MW2-Warzone-2-Cheat
 
-• Weapon Selection
+MAKE SURE YOU'RE IN FULLSCREEN WINDOWED ELSE IT WILL CRASH!
 
-• Memory Aim
+You will need C++ Redistributable :
+https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170
 
-• On Key (On/Off)
 
-• Aim Bones (Head) (Neck) (Body) (Closest)
 
-• Visibles Check
+# Features: 
 
-• Smooth (1-10)
+Aimbot:
 
-• FOV (1-100)
+- Weapon Selection
 
-*Visuals:*
+- Memory Aim
 
-• On Key (On/Off)
+- On Key (On/Off)
 
-• Player Names
 
-• Player Distance
+- Aim Bones (Head) (Neck) (Body) (Closest)
 
-• Health Bar (Constant) (Normal)
+- Visibles Check
 
-• Health Text
+- Smooth (1-10)
 
-• Bounding Box (3D) (2D)
+- FOV (1-100)
 
-• Outlines (Above) (Below) (Crosshair)
+ Visuals:
 
-• Color Picker
+- On Key (On/Off)
 
-![202581999-33dfde4a-e2ff-4dc1-b378-32e316180901](https://user-images.githubusercontent.com/118749575/203406541-ece60ae1-5b70-41fd-b5e5-78dabd1b10f6.png)
+- Player Names
+
+- Player Distance
+
+- Health Bar (Constant) (Normal)
+
+- Health Text
+
+- Bounding Box (3D) (2D)
+
+- Outlines (Above) (Below) (Crosshair)
+
+- Color Picker
+
+
+
+![image](https://user-images.githubusercontent.com/116767571/202581999-33dfde4a-e2ff-4dc1-b378-32e316180901.png)
+
+
+
