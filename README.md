@@ -3,8 +3,6 @@
 
 **All offsets and code here have been updated for latest game patch. It just needs to be compiled. Im leaving this up to you I have left the project files and .sln files so you can import and edit the project yourself. Below is a list of features for what is included, I am not responsible for what you do with this :)**
 
-# MW2-Warzone-2-Cheat
-
 MAKE SURE YOU'RE IN FULLSCREEN WINDOWED ELSE IT WILL CRASH!
 
 You will need C++ Redistributable :
