@@ -1,12 +1,12 @@
 #include "stdafx.h"
 #include <iostream>
-#include <imgui\imgui_internal.h>
+#include "imgui_internal.h"
 #include "Render.h"
 #include "Features.h"
 #include "tahoma.ttf.h"
-#include <Camera.h>
-#include <Entity.h>
-#include <Settings.h>
+#include "Camera.h"
+#include "Entity.h"
+#include "Settings.h"
 
 namespace d3d12hook {
 	ID3D12Device* d3d12Device = nullptr;

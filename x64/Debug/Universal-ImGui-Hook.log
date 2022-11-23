@@ -1,0 +1,68 @@
+﻿  Camera.cpp
+  Entity.cpp
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Entity.cpp(48,13): warning C4244: 'return': conversion from 'uint64_t' to 'DWORD', possible loss of data
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Entity.cpp(60,9): error C2664: 'int wcscmp(const wchar_t *,const wchar_t *)': cannot convert argument 1 from 'CHAR [260]' to 'const wchar_t *'
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Entity.cpp(60,21): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or parenthesized function-style cast
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstring.h(108,22): message : see declaration of 'wcscmp'
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Entity.cpp(60,9): message : while trying to match the argument list '(CHAR [260], const wchar_t [18])'
+  ESP.cpp
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\ESP.cpp(94,35): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\ESP.cpp(107,35): error C2660: 'Renderer::RenderText': function does not take 4 arguments
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Render.h(18,8): message : see declaration of 'Renderer::RenderText'
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\ESP.cpp(107,35): message : while trying to match the argument list '(std::string, ImVec2, int, ImColor)'
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\ESP.cpp(123,35): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\ESP.cpp(130,31): error C2660: 'Renderer::RenderText': function does not take 4 arguments
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Render.h(18,8): message : see declaration of 'Renderer::RenderText'
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\ESP.cpp(130,31): message : while trying to match the argument list '(std::string, ImVec2, int, ImColor)'
+  Hook.cpp
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\kiero.h(71,74): warning C4042: 'function': has bad storage class
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Hook.cpp(109,57): warning C4267: 'argument': conversion from 'size_t' to 'UINT', possible loss of data
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Hook.cpp(150,65): warning C4244: 'argument': conversion from 'ImU32' to 'float', possible loss of data
+  dllmain.cpp
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\kiero.h(71,74): warning C4042: 'function': has bad storage class
+  Global.cpp
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\kiero.h(71,74): warning C4042: 'function': has bad storage class
+  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\imgui\imgui_draw.cpp(201,69): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\imgui\imgui_draw.cpp(202,76): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\imgui\imgui_draw.cpp(203,75): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\imgui\imgui_draw.cpp(205,66): warning C4305: 'argument': truncation from 'double' to 'float'
+  imgui_impl_dx11.cpp
+  imgui_impl_dx12.cpp
+  imgui_impl_win32.cpp
+  imgui_widgets.cpp
+  kiero.cpp
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\kiero.h(71,74): warning C4042: 'function': has bad storage class
+  Menu.cpp
+  Render.cpp
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Render.cpp(42,17): error C2511: 'float Renderer::RenderText(const std::string &,const ImVec2 &,float,uint32_t,bool,bool)': overloaded member function not found in 'Renderer'
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\render.h(9,7): message : see declaration of 'Renderer'
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Render.cpp(46,10): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Render.cpp(47,10): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Render.cpp(48,10): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Render.cpp(49,10): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Render.cpp(97,10): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Render.cpp(98,10): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Render.cpp(99,10): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Render.cpp(100,10): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Render.cpp(109,10): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Render.cpp(110,10): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Render.cpp(111,10): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Render.cpp(112,10): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Render.cpp(121,10): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Render.cpp(122,10): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Render.cpp(123,10): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Render.cpp(124,10): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Render.cpp(133,10): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Render.cpp(134,10): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Render.cpp(135,10): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Render.cpp(136,10): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Render.cpp(145,10): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Render.cpp(146,10): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Render.cpp(147,10): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+C:\Users\blkad\OneDrive\Desktop\mw2-p2w-main\mw2-p2w-main\Render.cpp(148,10): warning C4244: 'initializing': conversion from 'uint32_t' to 'float', possible loss of data
+  Settings.cpp
+  Vector2D.cpp
+  Generating Code...
