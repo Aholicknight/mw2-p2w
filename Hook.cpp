@@ -1,12 +1,12 @@
 #include "stdafx.h"
 #include <iostream>
-#include "imgui_internal.h"
+#include <imgui\imgui_internal.h>
 #include "Render.h"
 #include "Features.h"
 #include "tahoma.ttf.h"
-#include "Camera.h"
-#include "Entity.h"
-#include "Settings.h"
+#include <Camera.h>
+#include <Entity.h>
+#include <Settings.h>
 
 namespace d3d12hook {
 	ID3D12Device* d3d12Device = nullptr;
@@ -17,7 +17,7 @@ namespace d3d12hook {
 	UINT64 d3d12FenceValue = 0;
 	ID3D12CommandQueue* d3d12CommandQueue = nullptr;
 
-
+	
 	PresentD3D12 oPresentD3D12;
 	DrawInstancedD3D12 oDrawInstancedD3D12;
 	DrawIndexedInstancedD3D12 oDrawIndexedInstancedD3D12;
@@ -38,19 +38,19 @@ namespace d3d12hook {
 
 	bool shutdown = false;
 
-	long __fastcall hookPresentD3D12(IDXGISwapChain3* pSwapChain, UINT SyncInterval, UINT Flags)
+	long __fastcall hookPresentD3D12(IDXGISwapChain3* pSwapChain, UINT SyncInterval, UINT Flags) 
 	{
 		static bool init = false;
 
-		if (GetAsyncKeyState(VK_INSERT) & 0x1)
+		if (GetAsyncKeyState(VK_INSERT) & 0x1) 
 			Menu::bIsOpen = !Menu::bIsOpen;
 
-		if (!init)
+		if (!init) 
 		{
-			if (SUCCEEDED(pSwapChain->GetDevice(__uuidof(ID3D12Device), (void**)&d3d12Device)))
+			if (SUCCEEDED(pSwapChain->GetDevice(__uuidof(ID3D12Device), (void**)&d3d12Device))) 
 			{
 				ImGui::CreateContext();
-
+				
 				unsigned char* pixels;
 				int width, height;
 				ImGuiIO& io = ImGui::GetIO(); (void)io;
@@ -77,7 +77,7 @@ namespace d3d12hook {
 
 				if (d3d12Device->CreateDescriptorHeap(&descriptorImGuiRender, IID_PPV_ARGS(&d3d12DescriptorHeapImGuiRender)) != S_OK)
 					return false;
-
+				
 				ID3D12CommandAllocator* allocator;
 				if (d3d12Device->CreateCommandAllocator(D3D12_COMMAND_LIST_TYPE_DIRECT, IID_PPV_ARGS(&allocator)) != S_OK)
 					return false;
@@ -129,7 +129,7 @@ namespace d3d12hook {
 			init = true;
 		}
 
-		if (!shutdown)
+		if (!shutdown) 
 		{
 			if (d3d12CommandQueue == nullptr)
 				return oPresentD3D12(pSwapChain, SyncInterval, Flags);
@@ -147,13 +147,13 @@ namespace d3d12hook {
 
 			g_Renderer->BeginScene();
 			auto Color = FromHSB(rainbow, 1.f, 1.f);
-			g_Renderer->RenderText("OVERFLOW", ImVec2(10, 6), 28, ImColor(Color.x, Color.y, Color.z, 255.f), false, true);
+			g_Renderer->RenderText("OVERFLOW", ImVec2(10, 6), 28, ImColor(Color.x, Color.y , Color.z , 255.f), false, true);
 
 			if (Settings::bEspToggle && Globals::IsLocalAlive())
 				ESP::Draw();
 
 			g_Renderer->EndScene();
-
+			
 			FrameContext& currentFrameContext = frameContext[pSwapChain->GetCurrentBackBufferIndex()];
 			currentFrameContext.commandAllocator->Reset();
 
@@ -185,17 +185,17 @@ namespace d3d12hook {
 		return oPresentD3D12(pSwapChain, SyncInterval, Flags);
 	}
 
-	void __fastcall hookkDrawInstancedD3D12(ID3D12GraphicsCommandList* dCommandList, UINT VertexCountPerInstance, UINT InstanceCount, UINT StartVertexLocation, UINT StartInstanceLocation)
+	void __fastcall hookkDrawInstancedD3D12(ID3D12GraphicsCommandList* dCommandList, UINT VertexCountPerInstance, UINT InstanceCount, UINT StartVertexLocation, UINT StartInstanceLocation) 
 	{
 		return oDrawInstancedD3D12(dCommandList, VertexCountPerInstance, InstanceCount, StartVertexLocation, StartInstanceLocation);
 	}
 
-	void __fastcall hookDrawIndexedInstancedD3D12(ID3D12GraphicsCommandList* dCommandList, UINT IndexCount, UINT InstanceCount, UINT StartIndex, INT BaseVertex)
+	void __fastcall hookDrawIndexedInstancedD3D12(ID3D12GraphicsCommandList* dCommandList, UINT IndexCount, UINT InstanceCount, UINT StartIndex, INT BaseVertex) 
 	{
 		return oDrawIndexedInstancedD3D12(dCommandList, IndexCount, InstanceCount, StartIndex, BaseVertex);
 	}
 
-	void hookExecuteCommandListsD3D12(ID3D12CommandQueue* queue, UINT NumCommandLists, ID3D12CommandList* ppCommandLists)
+	void hookExecuteCommandListsD3D12(ID3D12CommandQueue* queue, UINT NumCommandLists, ID3D12CommandList* ppCommandLists) 
 	{
 		if (!d3d12CommandQueue)
 			d3d12CommandQueue = queue;
@@ -205,7 +205,7 @@ namespace d3d12hook {
 
 	HRESULT hookSignalD3D12(ID3D12CommandQueue* queue, ID3D12Fence* fence, UINT64 value)
 	{
-		if (d3d12CommandQueue != nullptr && queue == d3d12CommandQueue)
+		if (d3d12CommandQueue != nullptr && queue == d3d12CommandQueue) 
 		{
 			d3d12Fence = fence;
 			d3d12FenceValue = value;
@@ -214,7 +214,7 @@ namespace d3d12hook {
 		return oSignalD3D12(queue, fence, value);
 	}
 
-	void release()
+	void release() 
 	{
 		shutdown = true;
 		kiero::unbind(54);
