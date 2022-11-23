@@ -6,7 +6,7 @@ bool WorldToScreen(Vector vOrigin, Camera* refdef, Vector2D* vOut)
 
 	vLocal = vOrigin - refdef->ViewLocation;
 
-
+	
 	vTrans.x = vLocal.Dot(refdef->Matrix[1]);
 	vTrans.y = vLocal.Dot(refdef->Matrix[2]);
 	vTrans.z = vLocal.Dot(refdef->Matrix[0]);
@@ -17,6 +17,6 @@ bool WorldToScreen(Vector vOrigin, Camera* refdef, Vector2D* vOut)
 	vOut->x = ((refdef->Width / 2) * (1 - (vTrans.x / refdef->FovX / vTrans.z)));
 	vOut->y = ((refdef->Height / 2) * (1 - (vTrans.y / refdef->FovY / vTrans.z)));
 
-
+	
 	return true;
 }
