@@ -8,9 +8,9 @@ bool GetPid();
 class cl_entity
 {
 public:
-
-
-
+	
+	
+	
 	char pad_0000[56]; //0x0000
 	int64_t xor1; //0x0038
 	int64_t xor2; //0x0040

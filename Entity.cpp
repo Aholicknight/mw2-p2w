@@ -57,7 +57,7 @@ bool GetPid()
 	{
 		while (Process32Next(handle, &entry))
 		{
-			if (!wcscmp(entry.szExeFile, L"ModernWarfare.exe"))
+			if (!wcscmp(entry.szExeFile, L"cod.exe"))
 			{
 				Utils::Log("Process ID: ", entry.th32ProcessID);
 				CloseHandle(handle);

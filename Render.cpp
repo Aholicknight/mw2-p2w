@@ -1,8 +1,7 @@
-#include "render.h"
-#include "imgui_internal.h"
+#include "Render.h"
+#include "imgui/imgui_internal.h"
 #include <sstream>
 #include "Vector.h"
-#include "imgui/imgui.h"
 
 ImFont* m_pTahomaFont;
 ImFont* m_pTahomaFontLarge;
@@ -39,7 +38,7 @@ void Renderer::EndScene()
 	ImGui::PopStyleVar(2);
 }
 
-float Renderer::RenderText(const std::string& text, const ImVec2& position, float size, uint32_t color, bool center, bool Large)
+ float Renderer::RenderText(const std::string& text, const ImVec2& position, float size, uint32_t color, bool center, bool Large)
 {
 	ImGuiWindow* window = ImGui::GetCurrentWindow();
 

@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include <iostream>
-#include "imgui_internal.h"
+#include "imgui/imgui_internal.h"
 #include "Render.h"
 #include "Features.h"
 #include "tahoma.ttf.h"

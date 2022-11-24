@@ -1,7 +1,7 @@
 #pragma once
 
 #include <sstream>
-
+ 
 class Vector
 {
 public:
@@ -60,9 +60,9 @@ public:
 	inline float Distance(const Vector& vector)
 	{
 		return sqrt(
-			(x - vector.x) * (x - vector.x) +
-			(y - vector.y) * (y - vector.y) +
-			(z - vector.z) * (z - vector.z));
+		(x - vector.x) * (x - vector.x) +
+		(y - vector.y) * (y - vector.y) +
+		(z - vector.z) * (z - vector.z));
 	}
 	Vector& operator+=(const Vector& v)
 	{

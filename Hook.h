@@ -6,7 +6,7 @@ namespace d3d12hook {
 	typedef void(__fastcall* DrawInstancedD3D12)(ID3D12GraphicsCommandList* dCommandList, UINT VertexCountPerInstance, UINT InstanceCount, UINT StartVertexLocation, UINT StartInstanceLocation);
 	extern DrawInstancedD3D12 oDrawInstancedD3D12;
 
-
+	
 	typedef void(__fastcall* DrawIndexedInstancedD3D12)(ID3D12GraphicsCommandList* dCommandList, UINT IndexCount, UINT InstanceCount, UINT StartIndex, INT BaseVertex);
 	extern DrawIndexedInstancedD3D12 oDrawIndexedInstancedD3D12;
 

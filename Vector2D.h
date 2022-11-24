@@ -5,8 +5,8 @@ typedef float vec_t;
 class Vector2D
 {
 public:
-
-
+	
+	
 	// Members
 	vec_t x, y;
 
@@ -40,7 +40,7 @@ public:
 	void Random(vec_t minVal, vec_t maxVal);
 	void Zero(); ///< zero out a vector
 
-	// equality
+				 // equality
 	bool operator==(const Vector2D& v) const;
 	bool operator!=(const Vector2D& v) const;
 

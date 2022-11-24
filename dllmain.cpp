@@ -16,13 +16,13 @@ unsigned long __stdcall onAttach()
 	Globals::pGameBase = reinterpret_cast<uintptr_t>(GetModuleHandleA(NULL));
 	Utils::Log("Game base found:   ", Globals::pGameBase);
 
-	while (!(Globals::hWindow = FindWindowA(NULL, "Call of Duty®: Modern Warfare®")));
+	while (!(Globals::hWindow = FindWindowA(NULL, "Call of DutyÂ®: Modern WarfareÂ®")));
 	Utils::Log("Game window found: ", Globals::hWindow);
 
 	GetPid();
 	Globals::HooksInit();
 
-	do
+	do 
 	{
 		Sleep(100);
 
@@ -34,20 +34,20 @@ unsigned long __stdcall onAttach()
 
 		if (GetAsyncKeyState(VK_NUMPAD3))
 			Settings::bSnapLinesToggle = !Settings::bSnapLinesToggle;
-
+		
 		if (GetAsyncKeyState(VK_NUMPAD0))
 			ShowWindow(::GetConsoleWindow(), SW_SHOW);
 
 	} while (!GetAsyncKeyState(VK_END));
 
-
+	
 	d3d12hook::release();
 	kiero::shutdown();
 	Menu::InputRemove((HWND)Globals::hWindow);
 
 	FreeConsole();
 	FreeLibraryAndExitThread(Globals::hMainModule, 0);
-
+	
 	return 0;
 }
 
@@ -58,6 +58,6 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserv
 		Globals::hMainModule = hModule;
 		CreateThread(0, 0, (LPTHREAD_START_ROUTINE)onAttach, hModule, 0, 0);
 	}
-
+	
 	return 1;
 }

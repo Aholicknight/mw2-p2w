@@ -7,7 +7,7 @@
 
 namespace Menu
 {
-
+	
 	bool bIsOpen = true;
 
 	ImVec4 Red = { 255, 0, 0, 255 };
@@ -81,7 +81,7 @@ namespace Menu
 
 			ImGui::PopStyleColor();
 			ImGui::Spacing();
-
+			
 			if (Settings::bSnapLinesToggle)
 			{
 				ImGui::PushStyleColor(ImGuiCol_Text, Green);
