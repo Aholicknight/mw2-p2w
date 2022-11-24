@@ -1,0 +1,35 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1101,5): warning MSB8027: Two or more files with the name of hook.c will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are ..\new cheat\mw2-warzone-2-cheat-2022--main\hook.c, ..\new cheat\mw2-warzone-2-cheat-2022--main\hook\src\hook.c.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(1101,5): warning MSB8027: Two or more files with the name of trampoline.c will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are ..\new cheat\mw2-warzone-2-cheat-2022--main\hook\src\trampoline.c, ..\new cheat\mw2-warzone-2-cheat-2022--main\trampoline.c.
+  Camera.cpp
+  dllmain.cpp
+C:\Users\blkad\OneDrive\Desktop\new cheat\mw2-warzone-2-cheat-2022--main\kiero.h(71,74): warning C4042: 'function': has bad storage class
+  Entity.cpp
+C:\Users\blkad\OneDrive\Desktop\new cheat\mw2-warzone-2-cheat-2022--main\Entity.cpp(60,9): error C2664: 'int wcscmp(const wchar_t *,const wchar_t *)': cannot convert argument 1 from 'CHAR [260]' to 'const wchar_t *'
+C:\Users\blkad\OneDrive\Desktop\new cheat\mw2-warzone-2-cheat-2022--main\Entity.cpp(60,21): message : Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or parenthesized function-style cast
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_wstring.h(108,22): message : see declaration of 'wcscmp'
+C:\Users\blkad\OneDrive\Desktop\new cheat\mw2-warzone-2-cheat-2022--main\Entity.cpp(60,9): message : while trying to match the argument list '(CHAR [260], const wchar_t [8])'
+  ESP.cpp
+C:\Users\blkad\OneDrive\Desktop\new cheat\mw2-warzone-2-cheat-2022--main\ESP.cpp(107,35): error C2660: 'Renderer::RenderText': function does not take 4 arguments
+C:\Users\blkad\OneDrive\Desktop\new cheat\mw2-warzone-2-cheat-2022--main\Render.h(18,8): message : see declaration of 'Renderer::RenderText'
+C:\Users\blkad\OneDrive\Desktop\new cheat\mw2-warzone-2-cheat-2022--main\ESP.cpp(107,35): message : while trying to match the argument list '(std::string, ImVec2, int, ImColor)'
+C:\Users\blkad\OneDrive\Desktop\new cheat\mw2-warzone-2-cheat-2022--main\ESP.cpp(130,31): error C2660: 'Renderer::RenderText': function does not take 4 arguments
+C:\Users\blkad\OneDrive\Desktop\new cheat\mw2-warzone-2-cheat-2022--main\Render.h(18,8): message : see declaration of 'Renderer::RenderText'
+C:\Users\blkad\OneDrive\Desktop\new cheat\mw2-warzone-2-cheat-2022--main\ESP.cpp(130,31): message : while trying to match the argument list '(std::string, ImVec2, int, ImColor)'
+  Global.cpp
+C:\Users\blkad\OneDrive\Desktop\new cheat\mw2-warzone-2-cheat-2022--main\kiero.h(71,74): warning C4042: 'function': has bad storage class
+  Hook.cpp
+C:\Users\blkad\OneDrive\Desktop\new cheat\mw2-warzone-2-cheat-2022--main\kiero.h(71,74): warning C4042: 'function': has bad storage class
+  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_impl_dx11.cpp
+  imgui_impl_dx12.cpp
+  imgui_impl_win32.cpp
+  imgui_widgets.cpp
+  kiero.cpp
+C:\Users\blkad\OneDrive\Desktop\new cheat\mw2-warzone-2-cheat-2022--main\kiero.h(71,74): warning C4042: 'function': has bad storage class
+  Menu.cpp
+  Render.cpp
+  Settings.cpp
+  Vector2D.cpp
+  Generating Code...
